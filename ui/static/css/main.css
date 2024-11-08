@@ -1,0 +1,42 @@
+.header {
+  .container {
+    .menu-container {
+      .menu-button {
+        color: white;
+        text-decoration: none;
+        font-size: 1.7vw;
+        margin-left: 2vw;
+      }
+    }
+  }
+}
+
+.footer{
+    .container{
+        .divider{
+            margin: 0 1.5vw;
+        }
+
+        .main-link{
+            margin-left: 0.5vw;
+            font-size: 1.3vw;
+            color: white;
+            text-decoration: none;
+            
+        }
+
+        .main-img{
+            width: 2vw;
+            height: 2vw;
+        }
+
+    }
+}
+
+/* Стили для планшетов и небольших десктопов (от 1024px до 1919px) */
+@media screen and (min-width: 801px) and (max-width: 1300px) {
+}
+
+/* Стили для мобильных устройств (от 375px до 1023px) */
+@media screen and (min-width: 0px) and (max-width: 800px) {
+}

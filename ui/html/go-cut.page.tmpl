@@ -1,0 +1,92 @@
+{{define "go-cut"}}
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сокращатель ссылок - golang developer</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./static/css/url-cutter.css" />
+    <!-- js -->
+    <script src="./static/js/url-cutter.js"></script>
+    <script src="./static/js/unitar.js"></script>
+  </head>
+
+  <body>
+    <!-- Заголовок -->
+    <section class="header">
+      <div class="container">
+        <button class="logo"><span class="bold">GOLANG </span>DEVELOPER</button>
+
+        <div class="divider"></div>
+
+        <button class="main-button bold">ГЛАВНАЯ</button>
+      </div>
+    </section>
+
+    <!-- Поле ввода -->
+    <section class="input">
+      <div class="container vertical">
+        <h1 class="title">Укороти ссылку - расширь возможности</h1>
+        <div class="horizontal">
+          <input type="url" name="url" id="url-input" autocomplete="url" />
+          <h3 class="url-button disabled" id="url-button">СОКРАТИТЬ</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контент -->
+    <section class="short-url">
+      <div class="container horizontal">
+        <div class="url vertical">
+          <div class="url-container" id="ready-short-url"></div>
+
+          <div class="horizontal">
+            <h3 class="copy-button" id="copy-button">КОПИРОВАТЬ</h3>
+            <div class="share-button" id="share-button">
+              <img
+                src="/static/img/share.svg"
+                alt="shate button"
+                id="share-button-img"
+              />
+            </div>
+          </div>
+
+          <!-- Кнопки поделиться -->
+          <div class="horizontal share-container" id="share-container">
+            <div class="share-types">
+              <img src="/static/img/tg-icon.svg" alt="telegram share button" id="tg-share-button"/>
+              <img
+                src="/static/img/whatsapp-icon.svg"
+                alt="whats app share button"
+                id="wa-share-button"
+              />
+              <img src="/static/img/viber-icon.svg" alt="viber share button"  id="vb-share-button"/>
+              <img src="/static/img/vk-icon.svg" alt="vk share button" id="vk-share-button"/>
+            </div>
+          </div>
+          <!-- Конец -->
+        </div>
+        <div class="qr vertical">
+          <img src="" alt="qr код" id="qr-code-img" />
+
+          <button class="download-button" id="download-qr-code-button">СКАЧАТЬ</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Подвал -->
+    <section class="footer">
+      <div class="container horizontal">
+        <a class="link" href="/rules">ПРАВИЛА</a>
+        <div class="divider"></div>
+        <a class="link" href="https://t.me/Tichomirov2003">РАЗРАБОТЧИК</a>
+      </div>
+    </section>
+  </body>
+</html>
+
+
+{{end}}
+{{template "go-cut" .}}
