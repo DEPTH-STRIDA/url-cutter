@@ -143,5 +143,14 @@ go build main.go
 Результатом сборки будет исполняемый файл `main` (для Linux) или `main.exe` (для Windows).
 
 ## Примеры использования
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dbdcb0ae-3ed5-4aec-8e61-d8eab55d420c" width="80%" alt="Десктопная версия с пустым полем ввода" />
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1d0a7f56-4f64-4fce-89f2-41698b2ada15" width="80%" alt="Десктопная версия с qr кодом" />
+</p>
 
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7c09b4ec-c219-42fa-a1c1-3e3243b4ecb2" width="32%" alt="Мобильная версия с пустым полем ввода" />
+  <img src="https://github.com/user-attachments/assets/45ac28e1-50f6-4b18-a598-8154d38203f9" width="32%" alt="Мобильная версия с qr кодом" />
+</p>
