@@ -143,3 +143,13 @@ func (wa *WebApp) HandleGetLongUrl(w http.ResponseWriter, r *http.Request) {
 	cache.AddUrl(longUrl, shortUrl)
 	http.Redirect(w, r, longUrl, http.StatusFound)
 }
+
+func (wa *WebApp) HandleYandexVerification(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+	w.Write([]byte(`<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>Verification: f57292d76e700cf5</body>
+</html>`))
+}
