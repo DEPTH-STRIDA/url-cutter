@@ -18,6 +18,7 @@ type ConfigStruct struct {
 type WebAppConfig struct {
 	AppIP   string `envconfig:"APP_IP" default:"localhost"`
 	AppPort string `envconfig:"APP_PORT" default:"8000"`
+	URL     string `envconfig:"URL" required:"true"`
 }
 
 type DataBaseConfig struct {

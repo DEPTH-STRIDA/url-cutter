@@ -94,7 +94,7 @@ func (wa *WebApp) HandleShorten(w http.ResponseWriter, r *http.Request) {
 }
 
 func respondWithShortUrl(w http.ResponseWriter, shortUrl string) {
-	shortUrl = "golang-developer.ru/u/" + shortUrl
+	shortUrl = models.Config.WebAppConfig.URL + "/u/" + shortUrl
 	qrCode, err := utils.GenerateQRCode(shortUrl)
 	if err != nil {
 		http.Error(w, "Внутренняя ошибка", http.StatusInternalServerError)
